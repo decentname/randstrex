@@ -7,11 +7,13 @@
 cd randstrex && mix deps.get
 ```
 
-## How tun Run
+## How to Run
 
 ```
 iex -S mix
 ```
+
+## Example
 
 ```elixir
 Randstrex.generate("/[-+]?[0-9]{1,16}[.][0-9]{1,6}/", 10)
