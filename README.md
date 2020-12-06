@@ -1,21 +1,23 @@
 # Randstrex
 
-**TODO: Add description**
+**Random String Generator using Regex**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `randstrex` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:randstrex, "~> 0.1.0"}
-  ]
-end
+## How to Install
+```
+cd randstrex && mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/randstrex](https://hexdocs.pm/randstrex).
+## How tun Run
+
+```
+iex -S mix
+```
+
+```elixir
+Randstrex.generate("/[-+]?[0-9]{1,16}[.][0-9]{1,6}/", 10)
+{:ok,
+ ["8136297045.6015", "9472503861.9675", "01358.83247", "+573.25",
+  "+768405219.290", "2048659137.810429", "+8591602347.2", "9702584163.132950",
+  "-132580497.25", "+620.1479"]}
+ ```
 
